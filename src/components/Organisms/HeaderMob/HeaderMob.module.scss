@@ -20,7 +20,7 @@
 }
 
 .incontainer {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -29,10 +29,15 @@
 }
 
 header {
+  background-color: #ffffff;
   box-shadow: none !important;
   &.MuiPaper-elevation4 {
     box-shadow: none !important;
   }
+}
+
+.header {
+  background-color: #1e1e1e;
 }
 
 .divider {
@@ -43,7 +48,6 @@ header {
 }
 
 .title {
-  margin-right: 80px !important;
   font-weight: 900;
   color: #000000;
 }
@@ -53,5 +57,21 @@ header {
   align-items: center;
 }
 
-.divcontainerr {
+.menu {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 999999;
+}
+
+.mobcontainer {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

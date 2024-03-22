@@ -49,12 +49,16 @@ export const Header: React.FC = () => {
           <Toolbar className={styles.toolbar}>
             <div className={styles.incontainer}>
               <div className={styles.divider}>
-                <Typography className={styles.title} variant="h6">
-                  Creativescape
-                </Typography>
-                <div>
-                  {' '}
-                  <HeaderLink text="Home" href="/" />
+                <div className={styles.divcontainerl}>
+                  <Typography className={styles.title} variant="h6">
+                    Creativescape
+                  </Typography>
+                  <div>
+                    <HeaderLink text="Home" href="/" />
+                    <HeaderLink text="About" href="/about" />
+                  </div>
+                </div>
+                <div className={styles.divcontainerr}>
                   <HeaderLink text="About" href="/about" />
                 </div>
               </div>
