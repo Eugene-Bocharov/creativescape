@@ -1,9 +1,27 @@
-import React from 'react';
-import { useState } from 'react'; // Import useState separately
+import React, { useState, useEffect } from 'react';
 import styles from './HomeWelc.module.scss';
 import { TypeAnimation } from 'react-type-animation';
 
 export const HomeWelc = () => {
+  const [showScrollBtn, setShowScrollBtn] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 500) {
+        setShowScrollBtn(false);
+      } else {
+        setShowScrollBtn(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className={styles.container}>
@@ -13,9 +31,8 @@ export const HomeWelc = () => {
               <h1 className={styles.title}>
                 <TypeAnimation
                   sequence={[
-                    // Same substring at the start will only be typed out once, initially
                     'Lets be Creative',
-                    2000, // wait 1s before replacing "Mice" with "Hamsters"
+                    2000,
                     'Lets be Innocative',
                     2000,
                     'Lets be Amazing',
@@ -39,6 +56,7 @@ export const HomeWelc = () => {
           </div>
           <div className={styles.imgBox}></div>
         </div>
+        {showScrollBtn && <a className={styles.scrollBtn} href="#"></a>}
       </div>
     </>
   );

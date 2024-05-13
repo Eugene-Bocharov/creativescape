@@ -1,0 +1,34 @@
+.container {
+  margin-top: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  max-width: 60%;
+  font-weight: 550;
+}
+
+.description {
+  font-size: 17px;
+  font-weight: 500;
+  color: #627d93;
+  text-align: center;
+  max-width: 80%;
+  line-height: 27px;
+}
+
+.divider {
+  margin-top: 30px;
+  width: 100%;
+  height: 0.5px;
+  background-color: #898989;
+}

@@ -63,9 +63,7 @@ export const HeaderMob = () => {
               <div className={styles.incontainer}>
                 <div className={styles.divider}>
                   <div className={styles.divcontainerl}>
-                    <Typography className={styles.title} variant="h6">
-                      Creativescape
-                    </Typography>
+                    <img src="../../../static/logoh.png" alt="" />
                   </div>
                   <div>
                     <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} />

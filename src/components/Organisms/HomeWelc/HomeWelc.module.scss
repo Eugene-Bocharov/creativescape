@@ -53,3 +53,52 @@
   text-align: center;
   line-height: 60px; /* Adjust to match the height of the link */
 }
+
+a.scrollBtn {
+  position: absolute;
+  height: 3.5em;
+  width: 2.4em;
+  border: 0.15em solid #000000;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 2.5em;
+  border-radius: 3em;
+  transition: opacity 0.5s ease-in-out;
+}
+a.scrollBtn:before {
+  position: absolute;
+  content: '';
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0.2em;
+  height: 1em;
+  width: 1em;
+  background-color: #000000;
+  border-radius: 50%;
+  animation: move-down 1.5s infinite;
+}
+@keyframes move-down {
+  100% {
+    transform: translateY(1.7em);
+  }
+}
+a.scrollBtn:after {
+  position: absolute;
+  content: 'SCROLL DOWN';
+  width: 11em;
+  display: block;
+  text-align: center;
+  left: -4.2em;
+  bottom: -2em;
+  font-size: 1em;
+  color: #000000;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+@media screen and (max-width: 500px) {
+  a.scrollBtn {
+    font-size: 12px;
+  }
+}
