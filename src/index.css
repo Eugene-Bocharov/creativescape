@@ -15,7 +15,7 @@ body {
 }
 
 *::selection {
-  background-color: #d36746; /* Set your desired background color */
+  background-color: #DF4746; /* Set your desired background color */
   color: rgb(255, 255, 255); /* Set your desired text color */
   border-radius: 89px !important; /* Set the desired border radius value */
 }

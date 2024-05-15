@@ -67,6 +67,7 @@ export const Header: React.FC = () => {
                     <HeaderLink text="Home" href="/" />
                     <HeaderLink text="Design" href="/design" />
                     <HeaderLink text="Web Development" href="/webdev" />
+                    <HeaderLink text="Contact" href="/contact" />
                   </div>
                 </div>
                 <div className={styles.divcontainerr}>

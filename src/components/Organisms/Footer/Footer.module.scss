@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: 65vh;
   margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -15,11 +14,17 @@
 
 .titleBox {
   display: flex;
+  @media (max-width: 915px) {
+    flex-direction: column;
+  }
 }
 
 .dividerBox {
-  justify-content: space-left;
+  justify-content: left;
   display: flex;
+  @media (max-width: 820px) {
+    flex-direction: column;
+  }
 }
 
 .title {
@@ -31,6 +36,7 @@
   font-size: 30px;
   margin: 0 0 20px 0;
   color: #ffffff;
+  text-wrap: nowrap;
 }
 
 .collumn {
@@ -39,6 +45,12 @@
   margin-right: 150px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1050px) {
+    margin-right: 100px;
+  }
+  @media (max-width: 960px) {
+    margin-right: 50px;
+  }
 }
 
 .link {
@@ -46,6 +58,7 @@
   text-decoration: none;
   font-size: large;
   margin-bottom: 15px;
+  text-wrap: nowrap;
 }
 
 .divider {
@@ -56,11 +69,13 @@
   margin-right: auto;
   margin-top: 50px;
 }
+
 .rightT {
   color: #585858;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 
 .logoImgBox {
@@ -72,11 +87,17 @@
 .logoTitle {
   font-size: 50px;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
   max-width: 60%;
   font-weight: 550;
   margin-top: 70px;
   margin-left: 100px;
+  @media (max-width: 915px) {
+    max-width: 100%;
+    margin-left: 0px;
+    font-size: 45px;
+    margin-top: 0px;
+  }
 }
 
 .logoImg {
