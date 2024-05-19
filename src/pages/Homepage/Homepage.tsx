@@ -8,6 +8,7 @@ import { InfoCard } from '../../components/Organisms/InfoCard/InfoCard';
 import { Title } from '../../components/Molecules/Title/Title';
 import { Slider } from '../../components/Organisms/Slider/Slider';
 import { DarkText } from '../../components/Organisms/DarkText/DarkText';
+import { DarkTitleDesk } from '../../components/Organisms/DarkTitleDesc/DarkTitleDesc';
 import { ServiceDesc } from '../../components/Organisms/ServiceDesc/ServiceDesc';
 import { Footer } from '../../components/Organisms/Footer/Footer';
 
@@ -33,17 +34,17 @@ export function Homepage() {
         title="We create beautiful websites that drive business growth."
         description="We are Brand Vision, an award-winning web design agency focused on transparency and creativity. Our mission is to tailor innovative web design solutions that align with your vision. Understanding the importance of your brand, we specialize in custom website design and development, ensuring each project is uniquely crafted to meet your specific needs."
       />
+      <DarkTitleDesk
+        title="We create beautiful websites that drive business growth."
+        description="We are Brand Vision, an award-winning web design agency focused on transparency and creativity. Our mission is to tailor innovative web design solutions that align with your vision. Understanding the importance of your brand, we specialize in custom website design and development, ensuring each project is uniquely crafted to meet your specific needs."
+        link="#"
+      />
       <InfoCard
         color="blue"
         title="Custom websites made just for you"
         description="A strong online presence is essential to ensure the success of any business as it impacts how your audience perceives your brand. In order to maximize growth, a business needs to clearly differentiate itself from the vast sea of competition. At Brand Vision, we specialize in designing websites that are not only visually stunning but also user-friendly, ensuring your brand makes an unforgettable impression."
       />
       <Title title="We are looking forward to working with you!" />
-      <InfoCard
-        color="red"
-        title="Custom websites made just for you"
-        description="A strong online presence is essential to ensure the success of any business as it impacts how your audience perceives your brand. In order to maximize growth, a business needs to clearly differentiate itself from the vast sea of competition. At Brand Vision, we specialize in designing websites that are not only visually stunning but also user-friendly, ensuring your brand makes an unforgettable impression."
-      />
       <ServiceDesc
         tabTitles={['Landing', 'Multipage', 'Portfolio']}
         tabDescriptions={[
@@ -80,16 +81,16 @@ export function Homepage() {
           },
         ]}
       />
-      <Slider />
-      <TitleDesc
-        title="We create beautiful websites that drive business growth."
-        description="We are Brand Vision, an award-winning web design agency focused on transparency and creativity. Our mission is to tailor innovative web design solutions that align with your vision. Understanding the importance of your brand, we specialize in custom website design and development, ensuring each project is uniquely crafted to meet your specific needs."
-      />
       <InfoCard
         color="red"
         title="Custom websites made just for you"
         description="A strong online presence is essential to ensure the success of any business as it impacts how your audience perceives your brand. In order to maximize growth, a business needs to clearly differentiate itself from the vast sea of competition. At Brand Vision, we specialize in designing websites that are not only visually stunning but also user-friendly, ensuring your brand makes an unforgettable impression."
       />
+      <TitleDesc
+        title="We create beautiful websites that drive business growth."
+        description="We are Brand Vision, an award-winning web design agency focused on transparency and creativity. Our mission is to tailor innovative web design solutions that align with your vision. Understanding the importance of your brand, we specialize in custom website design and development, ensuring each project is uniquely crafted to meet your specific needs."
+      />
+      <Slider />
       <Footer />
     </>
   );

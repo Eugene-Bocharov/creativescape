@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './HomeWelc.module.scss';
 import { TypeAnimation } from 'react-type-animation';
 
-export const HomeWelc = () => {
+export const HomeWelc: React.FC = () => {
   const [showScrollBtn, setShowScrollBtn] = useState(true);
 
   useEffect(() => {
@@ -23,41 +23,46 @@ export const HomeWelc = () => {
   }, []);
 
   return (
-    <>
-      <div className={styles.container}>
-        <div className={styles.midContainer}>
-          <div className={styles.divider}>
-            <div className={styles.textContainer}>
-              <h1 className={styles.title}>
-                <TypeAnimation
-                  sequence={[
-                    'Lets be Creative',
-                    2000,
-                    'Lets be Innocative',
-                    2000,
-                    'Lets be Amazing',
-                    2000,
-                    'Lets be Relentless',
-                    2000,
-                  ]}
-                  wrapper="span"
-                  speed={25}
-                  style={{ fontSize: '2em', display: 'inline-block' }}
-                  repeat={Infinity}
-                />
-              </h1>
-              <h3 className={styles.subTitle}>
-                CreativeScape – Where Ideas Take Flight
-              </h3>
-              <a href="#" className={styles.link}>
-                Explore
+    <div className={styles.container}>
+      <div className={styles.midContainer}>
+        <div className={styles.divider}>
+          <div className={styles.textContainer}>
+            <h1 className={styles.title}>
+              <TypeAnimation
+                sequence={[
+                  'Lets be Creative',
+                  2000,
+                  'Lets be Innovative',
+                  2000,
+                  'Lets be Amazing',
+                  2000,
+                  'Lets be Relentless',
+                  2000,
+                ]}
+                wrapper="span"
+                speed={25}
+                className={styles.typeAnimationTitle}
+                repeat={Infinity}
+              />
+            </h1>
+            <h3 className={styles.description}>
+              Whatever your unique idea or needs, we’ve got the tools and know
+              how to build your custom solution from discovery to deployment.
+            </h3>
+            <div className={styles.boxDivider}>
+              <a href="#" className={styles.seeButton}>
+                See more
+              </a>
+              <a href="#" className={styles.contactButton}>
+                Contact Us
               </a>
             </div>
           </div>
-          <div className={styles.imgBox}></div>
         </div>
-        {showScrollBtn && <a className={styles.scrollBtn} href="#"></a>}
+        <div className={styles.imgBox}></div>
       </div>
-    </>
+    </div>
   );
 };
+
+export default HomeWelc;

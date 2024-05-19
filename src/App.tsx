@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { useTranslation } from 'react-i18next';
 import './i18n'; // Import the i18n configuration

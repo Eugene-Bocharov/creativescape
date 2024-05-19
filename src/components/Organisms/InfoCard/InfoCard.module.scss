@@ -80,11 +80,8 @@
   border-radius: 20px;
   text-decoration: none;
   font-weight: 500;
-
   @media (max-width: 768px) {
     margin-left: 0;
-  }
-  @media (max-width: 550px) {
     height: 45px;
     width: 130px;
     padding-top: 13px;
