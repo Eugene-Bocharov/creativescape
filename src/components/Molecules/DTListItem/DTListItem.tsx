@@ -6,6 +6,7 @@ interface DTListItemProps {
   desc: string;
   link: string;
   isButton?: boolean; // Add isButton prop
+  price?: string;
 }
 
 export const DTListItem = ({
@@ -13,12 +14,14 @@ export const DTListItem = ({
   desc,
   link,
   isButton = true,
+  price,
 }: DTListItemProps) => {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.dividerBox}>
           <p className={styles.title}>{title}</p>
+          {price && <p className={styles.price}>From {price}$</p>}
           {isButton && ( // Conditionally render the button
             <a href={link} className={styles.seeButton}>
               See More
